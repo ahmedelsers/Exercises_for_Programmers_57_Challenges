@@ -31,8 +31,6 @@ class CountChar(tk.Tk):
 
 
 
-
-
 if __name__ == "__main__":
     app = CountChar()
     app.title("Character Counter")

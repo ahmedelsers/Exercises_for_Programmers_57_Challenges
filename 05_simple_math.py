@@ -33,5 +33,7 @@ while True:
         print("Please enter numbers only!")
     except ZeroDivisionError:
         print("Please enter numbers greater than 0")
-    except KeyboardInterrupt:
+    except (KeyboardInterrupt, EOFError):
+        print()
         print("Bye, Bye!")
+        exit(0)

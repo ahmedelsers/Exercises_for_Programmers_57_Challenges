@@ -41,5 +41,5 @@ try:
               )
     else:
         print("So, f for feet, m for meter, is it clear now?")
-except ValueError:
+except:
     print("Please enter numbers only.")

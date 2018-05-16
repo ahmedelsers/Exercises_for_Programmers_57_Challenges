@@ -16,9 +16,9 @@ def meter_to_feet(meter):
 
 def square_area(length, width, feet_or_meter):
     if feet_or_meter == 'f':
-        return feet_to_meter(length) * feet_to_meter(width)
+        return round(feet_to_meter(length) * feet_to_meter(width), 3)
     if feet_or_meter == 'm':
-        return meter_to_feet(length) * meter_to_feet(width)
+        return round(meter_to_feet(length) * meter_to_feet(width), 3)
 
 
 try:
@@ -29,7 +29,7 @@ try:
         print("The area is:\n"
               "{} square feet\n"
               "{} square meters".format((length*width),
-                                        round(square_area(length, width, feet_or_meter), 3))
+                                        square_area(length, width, feet_or_meter))
               )
     elif feet_or_meter == 'm':
         length = float(input("What is the length of the room in meter? "))
@@ -37,9 +37,9 @@ try:
         print("The area is:\n"
               "{} square meters\n"
               "{} square feet".format((length * width),
-                                        round(square_area(length, width, feet_or_meter), 3))
+                                      square_area(length, width, feet_or_meter))
               )
     else:
-        print("So, f for feet, m for meter, is it clear now?")
+        print("f for feet, m for meter, is it clear now?")
 except:
     print("Please enter numbers only.")

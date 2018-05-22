@@ -3,4 +3,4 @@ This is a list of my answers in Python 3 to the exercises listed in "Exercises f
 
 Regarding the 05_simple_math_GUI.py solution, I understand it can be less complex than this, but I just needed to show what I know about Python 3 and tkinter, also to remind myself to stop using tkinter and go with a different GUI toolkit available for Python, and I think I'll go with PyQt5.
 
-So, 05_simple_math_GUI.py is my last GUI Python/Tkinter script.
+05_simple_math_GUI.py is my last GUI Python/Tkinter script, I'll use PyQt5.
